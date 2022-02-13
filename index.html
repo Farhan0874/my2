@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/bootstrap.min.js">
+    <link rel="stylesheet" href="js/bootstrap.bundle.js">
+    <style>
+        nav-m{
+            background-color: rosybrown;
+        }
+        .drop-nav{
+            background-color: dimgray;
+        }
+        .main-b{
+            /* border-radius: 0% 100% 0% 100% / 0% 28% 72% 100% ; */
+        }
+        .qr {
+          height: 183px;
+          width: 172px;
+          position: relative;
+          left: 14%;
+          top: 13%;
+        }
+        .col-qr{
+            height: 600px;
+            border: black;
+            border-radius: 0% 100% 10% 90% / 0% 0% 100% 100% ;
+            background-color: #ff607c;
+            position: relative;
+        }
+        .col-qr:hover .contact{
+          visibility: visible;
+          opacity: 1;
+
+        }
+        .b-qr {
+            background-color: #ff607c;
+            display: inline-block;
+            position: relative;
+            left: 20%;
+            top: 20%;
+            height: 249px;
+            width: 249px;
+            border: transparent;
+            border-radius: 140px;
+        }
+        .contact{
+          position: absolute;
+          left: 21%;
+          top: 20%;
+          height: 249px;
+          width: 249px;
+          background-color: #ff607c;
+          border-radius: 140px;
+          visibility: hidden;
+          transition: visibility 0s, opacity 2s linear;
+          opacity: 0;
+        }
+        .btn-a {
+          border: 1px solid black;
+          padding: 5px 20px;
+          position: relative;
+          left: 61px;
+          top: 110px;
+        }
+        .btn-a:hover{
+          background-color: black;
+          color: #ff607c;
+          font-weight: bolder;
+          /* font-size: x-large; */
+        }
+        .box-m1{
+         border-radius: 16% 84% 32% 68% / 100% 100% 0% 0% ;
+         background-color: rgb(44, 44, 255); 
+         border: 1px solid blue;
+         height: 600px;
+         padding: 100px 10px 0 35px;
+        }
+        .para-m1{
+          position: relative;
+          top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- ------------------ N A V   B A R ---------------------- -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light "style="background-color: white; color;black">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Farhan Ali</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Skills</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                    </a>
+                    <ul class="dropdown-menu  drop-nav" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Web Development</a></li>
+                      <li><a class="dropdown-item" href="#">Android Development</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Contact us</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <div class="container" style="background-image: url(img/banner.jpg);">
+              <div class="row main-b">
+                <div class="col-md-6"  style="color: black;">
+                    <div class="box-m1 col align-self-center"><div class="para-m1"><p class="h1 ">My name is <br> Farhan Ali.</p>
+                    <p class="h2">&</p>
+                    <p class="h1">I am a <br> Web Developer</p>
+                    <p class="h2">I make web sites for Business, Trade, Blogs & much more...</p>
+                    <!-- <p class="h3">Don't Make Things Difficult by Over-thinking Just Start Coding it</p> -->
+                    </div>
+                  </div>
+                    
+                </div>
+                <div class="col-md-6 col-align-self-center col-qr">
+                  <div class="b-qr col-md-2"><a target="_blank" href="https://api.whatsapp.com/send?phone=+923442295954&text=Hi,%20I%27m%20contacting%20you%20through%20your%20website.%20I%20need%20a%20Web%20page%20for%20my%20business%20and%20for%20myself%20I%20will%20be%20happy%20if%20you%20help%20me%20in%20this%20regard.%20It%20should%20have%20the%20following%20requirments.....%20"><img src="img/qr.png" class="qr" alt="QR Code"></a></div>
+                  <div class="contact"> <a href="https://api.whatsapp.com/send?phone=+923442295954&text=Hi,%20I%27m%20contacting%20you%20through%20your%20website.%20I%20need%20a%20Web%20page%20for%20my%20business%20and%20for%20myself%20I%20will%20be%20happy%20if%20you%20help%20me%20in%20this%20regard.%20It%20should%20have%20the%20following%20requirments.....%20" target="_blank" class="btn btn-a">Click me</a></div>
+                </div>
+              </div>
+          </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>
